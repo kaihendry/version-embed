@@ -1,0 +1,14 @@
+name: Show version
+
+on: push
+
+jobs:
+    docker-compose:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/setup-go@v4
+          with:
+            go-version: 'stable'
+        - uses: actions/checkout@v3
+        - name: Show version ${{ github.sha }}
+          run: make
