@@ -12,3 +12,4 @@ jobs:
         - uses: actions/checkout@v3
         - name: Show version ${{ github.sha }}
           run: make
+        - run: make logs
