@@ -1,6 +1,5 @@
 services:
   ve:
-    # can ko build the local image instead?
-    build: .
+    build: . # can ko build the local image instead?
     ports:
       - "8080:8080"
